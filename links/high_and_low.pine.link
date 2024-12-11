@@ -63,6 +63,8 @@ custom_highest_and_date(len, maxbarsback) =>
 		[high[index], time[index] / 1000]
 fastSearchTimeIndex(x, maxbarsback) =>
 	// max_bars_back(time, maxbarsback)
+	if x/1000 <= first_bar_time
+    	bar_index
 	mid = 0 * time[maxbarsback]
 	right = math.min(bar_index, maxbarsback)
 	left = 0
